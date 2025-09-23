@@ -31,7 +31,6 @@ pip install speedtest-cli
 ## Cronでの定期実行
 
 このスクリプトを定期的に実行するには、`crontab` を使用します。
-以下の例では、毎時0分にスクリプトを実行します。
 
 1. `crontab -e` コマンドでcrontab編集画面を開きます。
 2. 以下の行を追加します。スクリプトのパス (`/opt/sh/speedtest-starlink.sh`) は環境に合わせて確認・修正してください。
