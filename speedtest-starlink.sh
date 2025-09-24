@@ -3,8 +3,6 @@
 OUTPUT_FILE="/var/www/starlink/starlink-jp"
 TMP_FILE="/tmp/speedtest.tmp"
 
-trap 'rm -f "$TMP_FILE"' EXIT
-
 {
   echo "###########################################"
   echo "# これは日本リージョンからの"
@@ -23,3 +21,4 @@ fi
 
 mv "$TMP_FILE" "$OUTPUT_FILE"
 
+trap 'rm -f "$TMP_FILE"' EXIT
